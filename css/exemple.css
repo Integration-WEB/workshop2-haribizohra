@@ -1,0 +1,41 @@
+body {
+  color: #ff5500;
+}
+
+.button, .button-alert a {
+  display: inline-block;
+  color: #ff5500;
+  text-align: center;
+  border: solid 2px #ff5500;
+}
+
+.button-alert a {
+  border-radius: 4px;
+}
+
+#box {
+  font-weight: bold;
+  font-family: Algerian;
+  display: inline-block;
+  margin-left: 1Opx;
+}
+
+.m-1 {
+  margin: 0 0.25rem;
+}
+
+.m-2 {
+  margin: 0 0.5rem;
+}
+
+.m-3 {
+  margin: 0 0.75rem;
+}
+
+.btn {
+  background: #ff5500;
+  border-radius: 5px;
+  color: #ff1f17;
+}
+
+/*# sourceMappingURL=exemple.css.map */

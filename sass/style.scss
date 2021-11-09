@@ -1,0 +1,54 @@
+$primary-color: red;
+$langages3:  "Symfony","html","css","js";
+$langages4:  ".net","ANGULAR","Spring","React";
+.text{
+    color:$primary-color;
+    font-size: 20px;
+}
+
+textarea{
+    @extend .text;
+    
+}
+h1{
+    @extend .text
+}
+
+@mixin border($border : 3px, $color: solid yellow){
+    border: $border $color;
+ 
+}
+.btn{
+    @include border();
+}
+
+@function background($color){
+    @if ($color == white){
+        @return black;
+    }
+    @else{
+        @return white;
+    }
+}
+.bn-default{
+    color: background(pink);
+}
+@function first($list)
+{
+    @return nth($list,1);
+}
+.test1{
+    content: first($langages3);
+}
+
+@function last($list)
+{
+    @return nth($list,length($list));
+}
+.test2{
+    content: last($langages3);
+}
+
+
+
+
